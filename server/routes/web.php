@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('videos/top');
 });
+
+// Route::get('videos', ' VideoController@top');
+// Route::get('/holiday', 'CalendarController@getHoliday');
+// Route::post('/holiday', 'CalendarController@postHoliday');
+// Route::get('/', 'CalendarController@index');
 Route::resource('videos', 'VideoController');
