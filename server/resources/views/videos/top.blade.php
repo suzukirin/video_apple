@@ -145,15 +145,24 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="https://laracasts.com"><img src="https://cdn.pixabay.com/photo/2016/03/27/18/13/laptop-1283368_1280.jpg" width="240" height="200" alt="Social"></a>
+                    <a href="http://localhost/videos"><img src="https://cdn.pixabay.com/photo/2015/03/26/09/55/musicians-690591__340.jpg" width="240" height="200" alt=""></a>
+                    <a href="https://laravel-news.com"><img src="https://cdn.pixabay.com/photo/2017/08/03/01/22/microphone-2574511__480.jpg"width="240" height="200" alt="Stage"></a>
+                    <a href="https://laravel-news.com"><img src="https://cdn.pixabay.com/photo/2014/09/22/00/56/lead-singer-455750_1280.jpg" width="240" height="200" alt="Recruit"></a>
+                    {{-- <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a> --}}
                 </div>
+        {{-- <div class="topcate">
+          <select name=”category” onCharge="top.location.href=value">
+            <option value=”cate”></option>
+            <option value=”gakki”>楽器</option>
+            <option value=”voice”>song</option>
+            {{-- <option value=””>上級者向け</option> --}}
+          {{-- </select> 
+        </div> --}} 
             </div>
         </div>
     </body>

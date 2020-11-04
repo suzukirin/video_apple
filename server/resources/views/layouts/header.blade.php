@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand logo" href="{{ route('videos.index') }}">SUCCESS</a>
+<a class="navbar-brand logo" href="/">SUCCESS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,18 +8,24 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         
- <a class="nav-link" href="{{ route('videos.index') }}">Home <span class="sr-only">(current)</span></a>
+ <a class="nav-link" href="{{ route('videos.index') }}">Singer <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         {{-- <a class="nav-link" href="#">Link</a> --}}
         {{-- <html lang="ja"> --}}
-         
+{{-- <SCRIPT LANGUAGE="JavaScript">
+<!--
+function menuLink(linkLoc)
+{ if(linkLoc !="") { window.location.href=linkLoc;} }
+//-->
+</SCRIPT> --}}
+<form name="cate">
         <div class="box">
           <select name=”category” onCharge="top.location.href=value">
             <option value=”cate”>Category</option>
             <option value=”beginner”>初心者向け</option>
             <option value=”tyyy”>中級者向け</option>
-            <option value=”(http://localhost/videos)”>上級者向け</option>
+            <option value=”http://localhost/videos”>上級者向け</option>
             <option value=”ladies”>女性向け</option>
             <option value=”kids”>キッズ向け</option>
             <option value=”jpop”>j-pop</option>
@@ -27,8 +33,9 @@
             <option value=”rock”>ロック</option>
             <option value=”opera”>オペラ</option>
             <option value=”enk”>演歌</option>
-               </select> 
-          </div>
+          </select> 
+        </div>
+</form>
       </li>
       {{-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>

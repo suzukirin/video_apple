@@ -13,8 +13,8 @@
 
 @extends('layouts.app')
 
- @section('title', 'プロフィール')
- @section('content')
+@section('title', 'プロフィール')
+@section('content')
           {{-- @include('layouts.video', compact('video')) --}}
 
     <div class="profile">

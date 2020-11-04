@@ -5,6 +5,7 @@
      </div>
      <div class="ml-3">
          <div class="mt-3 mb-3">
+             
              <h3>
                  <a href="{{ route('videos.show', $video->id) }}">{{ $video->name }}</a>
              </h3>
