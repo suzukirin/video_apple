@@ -22,3 +22,10 @@ Route::get('/', function () {
 // Route::post('/holiday', 'CalendarController@postHoliday');
 // Route::get('/', 'CalendarController@index');
 Route::resource('videos', 'VideoController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

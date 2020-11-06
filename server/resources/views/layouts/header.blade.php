@@ -50,5 +50,5 @@ function menuLink(linkLoc)
              <input class="form-control mr-sm-2" type="search" name="name" placeholder="コーチの名前">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-  </div>
+  </div> 
 </nav>

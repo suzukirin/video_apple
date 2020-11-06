@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddImgPathToVideosTable extends Migration
+class AddLevelToVideosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,7 @@ class AddImgPathToVideosTable extends Migration
     public function up()
     {
         Schema::table('videos', function (Blueprint $table) {
-            // カラム名img_pathをカラム名pr_longの後ろに追加する
-            $table->string('img_path');//->after('pr_long');
+            $table->string('level');
         });
     }
 
@@ -27,7 +26,7 @@ class AddImgPathToVideosTable extends Migration
     public function down()
     {
         Schema::table('videos', function (Blueprint $table) {
-            $table->dropColumn(['img_path']);
+            $table->dropColumn(['level']);
         });
     }
 }

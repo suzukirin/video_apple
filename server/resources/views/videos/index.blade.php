@@ -16,7 +16,7 @@
 @section('title','コーチ一覧')
 
 @section('content')
-<ul>
+<ul> 
     @foreach ($videos as $video)
         <li class="list-unstyled border mb-5 pl-3 shadow">
         <!-- // リンク先をidで取得し名前で出力 -->
@@ -27,7 +27,7 @@
          {{ $videos->links() }}
      </div> 
 @endsection
-{{-- <a href="/videos/create"><button>新規登録</button></a> --}}
+<a href="/videos/create"><button>新規登録</button></a>
 {{-- </body>
 </div>
 </html> --}}
