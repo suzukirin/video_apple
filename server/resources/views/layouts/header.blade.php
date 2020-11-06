@@ -9,9 +9,9 @@
       <li class="nav-item active">
         
  <a class="nav-link" href="{{ route('videos.index') }}">Singer <span class="sr-only">(current)</span></a>
+ <a class="nav-link" href="{{ route('videos.create') }}">Account</a> 
+ <li class="nav-item">
       </li>
-      <li class="nav-item">
-        {{-- <a class="nav-link" href="#">Link</a> --}}
         {{-- <html lang="ja"> --}}
 {{-- <SCRIPT LANGUAGE="JavaScript">
 <!--
@@ -36,18 +36,14 @@ function menuLink(linkLoc)
           </select> 
         </div>
 </form>
-      </li>
+      {{-- </li>
       {{-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li> --}}
-    </ul>
+    {{-- </ul> --}} 
 
-    {{-- <form class="form-inline my-2 my-lg-0"> --}}
          <form class="form-inline my-2 my-lg-0" mechod="GET" action="{{ route('videos.index') }}">
-       {{-- <input class="form-control mr-sm-2" type="search" placeholder="カテゴリー">
-       <input class="form-control mr-sm-2" type="search" placeholder="コーチの名前"> --}}
-             <input class="form-control mr-sm-2" type="search" name="category" placeholder="カテゴリ">
-             <input class="form-control mr-sm-2" type="search" name="name" placeholder="コーチの名前">
+             <input class="form-control mr-sm-2" type="search" name="category" placeholder="Category">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div> 

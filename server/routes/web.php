@@ -13,10 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('videos/top');
-});
+// Route::get('/', function () {
+//     return view('videos/top');
+// });
 
+Route::get('/', function () {
+    return view('index');
+});
 // Route::get('videos', ' VideoController@top');
 // Route::get('/holiday', 'CalendarController@getHoliday');
 // Route::post('/holiday', 'CalendarController@postHoliday');
@@ -25,7 +28,10 @@ Route::resource('videos', 'VideoController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@show')->name('home');
+Route::get('/home', 'HomeController@top')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+
