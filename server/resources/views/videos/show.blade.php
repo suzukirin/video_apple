@@ -8,7 +8,7 @@
     <div class="profile">
         <div class="row block">
 
-            <div class="image col-3">
+            <div class="image col-4">
                 <img src="{{ url($video->image_url) }}" class="square-img">
             </div>
         
@@ -16,7 +16,7 @@
                 
                 {{-- <colgroup span="1" style="width:200px;background-color:#efefef;"></colgroup> --}}
                 
-            <div class="info col-8">
+            <div class="info col-7">
                 <p>
                     名前<br>{{ $video->name }}</b>
                 </p>
@@ -26,10 +26,10 @@
                 </p>
                 
                 <p>
-                    一時間あたり<br>{{ $video->price }}円</b>
+                    一時間あたり:{{ $video->price }}円</b>
                 </p>
                 
-                <p>
+                {{-- <p>
                     category:{{ $video->category }}</b>
                 </p>
                 <p>
@@ -40,53 +40,116 @@
                 </p>
                 <p>
                     講義形式:{{ $video->note }}</b>
-                </p>
+                </p> --}}
             </div>
         </div>
     </div>
-    
-    
-    {{-- {{-- <!-- 商品のidを元に編集ページへ遷移する --> --}}
-        <a href="/videos/{{ $video->id }}/edit"><button>編集する</button></a>
-    {{-- <form action="/videos/{{ $video->id }}" method="post">
-        @csrf
-        @method('DELETE')
-        <input type="submit" value="削除する" onclick="if(!confirm('削除しますか？')){return false};">
-    </form> --}} 
-    {{-- </div>
-    </body>
-    </html> --}}
-    
-    <br>
-    <form>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+{{-- <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title> --}}
+  {{-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head> --}}
+<body>
+  <div id="page">
+    <div class="container">
+      <h1>Subscription</h1>
+      
+      <div class="row">
+        <div class="col-sm-9">
+          <form method="post" action="mail.php" class="form-horizontal">
+            <div class="form-group">
+              <label for="input-name" class="col-sm-2 control-label">お名前</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="input-name" placeholder="お名前" required="required">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-mail" class="col-sm-2 control-label">メールアドレス</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="input-mail" placeholder="メールアドレス" required="required">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">希望日程</label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option value="month">月</option>
+                  <option value="num">1</option>
+                  <option value="num">2</option>
+                  <option value="num">3</option>
+                  <option value="num">4</option>
+                  <option value="num">5</option>
+                  <option value="num">6</option>
+                  <option value="num">7</option>
+                  <option value="num">8</option>
+                  <option value="num">9</option>
+                  <option value="num">10</option>
+                  <option value="num">11</option>
+                  <option value="num">12</option>
+                
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">日程</label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option value="">日付</option>
+                  <option value="num">1</option>
+                  <option value="num">2</option>
+                  <option value="num">3</option>
+                  <option value="num">4</option>
+                  <option value="num">5</option>
+                  <option value="num">6</option>
+                  <option value="num">7</option>
+                  <option value="num">8</option>
+                  <option value="num">9</option>
+                  <option value="num">10</option>
+                  <option value="num">11</option>
+                  <option value="num">12</option>
+                  <option value="num">13</option>
+                  <option value="num">14</option>
+                  <option value="num">15</option>
+                  <option value="num">16</option>
+                  <option value="num">17</option>
+                  <option value="num">18</option>
+                  <option value="num">19</option>
+                  <option value="num">20</option>
+                  <option value="num">21</option>
+                  <option value="num">22</option>
+                  <option value="num">23</option>
+                  <option value="num">24</option>
+                  <option value="num">25</option>
+                  <option value="num">26</option>
+                  <option value="num">27</option>
+                  <option value="num">28</option>
+                  <option value="num">29</option>
+                  <option value="num">30</option>
+                  <option value="num">31</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">ご要望</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" required="required"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">送信</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-</div>
-<div class="form-group">
-    <label for="exampleFormControlSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-    </select>
-</div>
-<div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-</form>
+      </div>
+
+    </div><!-- /container -->
+  </div><!-- /page -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
 @endsection
-</div>
