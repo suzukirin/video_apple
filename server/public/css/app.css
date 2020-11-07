@@ -11055,18 +11055,19 @@ a.text-dark:focus {
 	color: #666666;
 }
 
-.index {
+body{
   /* position: relative; */
   opacity: 0.85;
   width: 100%;
   min-height: 100vh;
-  background:url("https://cdn.pixabay.com/photo/2020/04/04/14/54/abstract-5002573__340.jpg")
+  /* background:url("https://cdn.pixabay.com/photo/2020/04/04/14/54/abstract-5002573__340.jpg") */
+  /* background-color:white; */
   
 }
 
-.show{
+/* .show{
   background:url("https://cdn.pixabay.com/photo/2020/04/04/14/54/abstract-5002573__340.jpg")
   center / contain;
   
-}
+} */
 
