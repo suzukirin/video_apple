@@ -46,13 +46,13 @@
     </div>
     
     
-    {{-- <!-- 商品のidを元に編集ページへ遷移する -->
+    {{-- {{-- <!-- 商品のidを元に編集ページへ遷移する --> --}}
         <a href="/videos/{{ $video->id }}/edit"><button>編集する</button></a>
-    <form action="/videos/{{ $video->id }}" method="post">
+    {{-- <form action="/videos/{{ $video->id }}" method="post">
         @csrf
         @method('DELETE')
         <input type="submit" value="削除する" onclick="if(!confirm('削除しますか？')){return false};">
-    </form> --}}
+    </form> --}} 
     {{-- </div>
     </body>
     </html> --}}
