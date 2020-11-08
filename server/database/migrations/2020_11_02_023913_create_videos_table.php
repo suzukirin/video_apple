@@ -20,6 +20,11 @@ class CreateVideosTable extends Migration
             $table->integer('price');
             $table->string('email');
             $table->text('image_url');
+            $table->string('category');
+            // $table->string('level');
+             $table->string('note');
+             $table->string('pr_short');
+             $table->text('pr_long');
             $table->timestamps();
         });
     }

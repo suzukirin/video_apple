@@ -13,7 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('videos/top');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+// Route::get('videos', ' VideoController@top');
+// Route::get('/holiday', 'CalendarController@getHoliday');
+// Route::post('/holiday', 'CalendarController@postHoliday');
+// Route::get('/', 'CalendarController@index');
+
 Route::resource('videos', 'VideoController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@show')->name('home');
+Route::get('/home', 'HomeController@top')->name('home');
+
+// Route::get('videos/', 'MailController@hello');
+// Route::get('/videos', 'MailController@index');
+
+
+
+
+

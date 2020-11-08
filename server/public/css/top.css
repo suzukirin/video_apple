@@ -1,0 +1,8 @@
+img.top_image{
+  border-radius: 10px;
+}
+あとで背景
+ width: 100%;
+  min-height: 100vh;
+  background:url("https://cdn.pixabay.com/photo/2016/01/19/17/56/concert-1149979__340.jpg")
+  center / contain;
