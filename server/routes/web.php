@@ -32,6 +32,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@show')->name('home');
 Route::get('/home', 'HomeController@top')->name('home');
 
+// Route::get('videos/', 'MailController@hello');
+// Route::get('/videos', 'MailController@index');
+
 
 
 

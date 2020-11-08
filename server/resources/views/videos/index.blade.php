@@ -24,6 +24,43 @@
         <ul> 
           @foreach ($videos as $video)
           {{-- <li class="list-unstyled border mb-5 pl-3 shadow"> --}}
+            <div class="card-deck">
+  <div class="card">
+            <img src="{{ url($video->image_url) }}" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title>
+            <div class="card-body">
+              <h5 class="card-title"><a href="{{ route('videos.show', $video->id) }}">{{ $video->name }}</h5>
+      <p class="card-text"></p>
+            </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+            <div class="card-body">
+      <h5 class="card-title"><a href="{{ route('videos.show', $video->id) }}">{{ $video->name }}</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+    <div class="card-body">
+      <h5 class="card-title"><a href="{{ route('videos.show', $video->id) }}">{{ $video->name }}</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+            
+            
+            
+            
+{{--             
             <div class="card mb-3" style="max-width: 1000px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
@@ -37,7 +74,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> --}}
             <!-- // リンク先をidで取得し名前で出力 -->
             {{-- @include('layouts.video', compact('video')) --}}
             @endforeach

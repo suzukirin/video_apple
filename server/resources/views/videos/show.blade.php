@@ -58,7 +58,7 @@
       
       <div class="row">
         <div class="col-sm-9">
-          <form method="post" action="mail.php" class="form-horizontal">
+          <form method="post" action="{{ view('mail.php') }}" class="form-horizontal">
             <div class="form-group">
               <label for="input-name" class="col-sm-2 control-label">お名前</label>
               <div class="col-sm-10">
